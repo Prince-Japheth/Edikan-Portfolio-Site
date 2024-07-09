@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+        .project-card {
+            background-color: #232325;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .project-card img {
+            width: 90px;
+            margin-left: 0 auto !important;
+            border-radius: 10px;
+        }
+
+        .project-card p {
+            margin-top: auto;
+        }
+
+        .cards-container-fluid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Mobile styles */
+        @media only screen and (max-width: 768px) {
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PC NAVBAR -->
+    <div class="navbar">
+        <a href="./index.html"><ion-icon name="home"></ion-icon></a>
+        <a href="./about.html"><ion-icon name="person"></ion-icon></a>
+        <a href="#" class="active"><ion-icon name="briefcase"></ion-icon></a>
+        <a href="./contact.html"><ion-icon name="chatbox"></ion-icon></a>
+    </div>
+
+    <!-- Mobile NAVBAR -->
+    <div class="mobile-navbar">
+        <a href="./index.html"><ion-icon name="home"></ion-icon></a>
+        <a href="./about.html"><ion-icon name="person"></ion-icon></a>
+        <a href="#" class="active"><ion-icon name="briefcase"></ion-icon></a>
+        <a href="./contact.html"><ion-icon name="chatbox"></ion-icon></a>
+    </div>
+
+
+    <section>
+        <div class="header-text">
+            <span class="hbg">WORKS</span>
+            <h1>MY <span class="gold">PORTFOLIO</span></h1>
+        </div>
+
+        <div class="cards-container-fluid" id="project">
+            <div class="project-card">
+                <img src="./image/image.png" alt="CITRUS BANK">
+                <p class="title">CITRUS BANK</p>
+                <p class="description">A banking website created with Bootstrap to provide quality services to
+                    customers.
+                    24hrs online banking system and quick response from the customer care to the customers.</p>
+            </div>
+            <div class="project-card">
+                <img src="./image/topix.jpg" alt="TOPIX">
+                <p class="title">TOPIX</p>
+                <p class="description">A community-based website that allows users to interact with each other fluently.
+                    It
+                    also allows them to have fun-time by viewing posts created by other users and joining communities.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3 class="title belleza">BELLEZA</h3>
+                <p class="description">A brand name with different branches like the perfume branch, clothing,
+                    accessories,
+                    and other branches available.</p>
+            </div>
+            <div class="project-card">
+                <h3 class="title autocon">AutoCon <span>Agency</span></h3>
+                <p class="description">A BMW cars based website where our mission is to empower businesses with
+                    innovative web
+                    solutions that drive growth and success, ensuring we exceed client expectations through our
+                    dedication,
+                    creativity, and expertise while fostering long-term partnerships built on trust.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
