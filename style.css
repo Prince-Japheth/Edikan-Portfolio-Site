@@ -59,10 +59,6 @@ section {
 	gap: 100px;
 }
 
-.title {
-	display: none;
-}
-
 .image {
 	border-radius: 20px;
 	width: 500px;
