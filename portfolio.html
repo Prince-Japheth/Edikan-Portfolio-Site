@@ -7,8 +7,8 @@
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-  <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
-
+    <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         .project-card {
             background-color: #232325;
@@ -43,9 +43,7 @@
         }
 
         /* Mobile styles */
-        @media only screen and (max-width: 768px) {
-
-        }
+        @media only screen and (max-width: 768px) {}
     </style>
 </head>
 
@@ -75,14 +73,14 @@
         </div>
 
         <div class="cards-container-fluid" id="project">
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <img src="./image.png" alt="CITRUS BANK">
                 <p class="title">CITRUS BANK</p>
                 <p class="description">A banking website created with Bootstrap to provide quality services to
                     customers.
                     24hrs online banking system and quick response from the customer care to the customers.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                 <img src="./topix.jpg" alt="TOPIX">
                 <p class="title">TOPIX</p>
                 <p class="description">A community-based website that allows users to interact with each other fluently.
@@ -90,13 +88,13 @@
                     also allows them to have fun-time by viewing posts created by other users and joining communities.
                 </p>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <p class="title">BELLEZA</p>
                 <p class="description">A brand name with different branches like the perfume branch, clothing,
                     accessories,
                     and other branches available.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <p class="title">AutoCon <span>Agency</span></p>
                 <p class="description">A BMW cars based website where our mission is to empower businesses with
                     innovative web
@@ -114,6 +112,10 @@
     <script src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
