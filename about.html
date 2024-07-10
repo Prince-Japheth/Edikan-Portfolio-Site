@@ -7,7 +7,8 @@
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-  <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -60,10 +61,10 @@
                             <ion-icon name="arrow-forward-circle"></ion-icon>
                         </button>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <h1>12+</h1> -YEARS OF EXPERIENCE
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <h1>20+</h1> -COMPLETED PROJECTS
                     </div>
                 </div>
@@ -121,11 +122,11 @@
                 <div class="personal-info-content" style="justify-content: space-around;">
                     <div style="display: block; display: flex; margin-top: -30px;" class="mobile">
                     </div>
-                    <div class="edu-card">
+                    <div class="edu-card" data-aos="fade-up">
                         <h1>2018 - 2020</h1> -Senior Secondary Certificate Exams
                         <p>GOVERNMENT SECONDARY SCHOOL, KARSHI.</p>
                     </div>
-                    <div class="edu-card">
+                    <div class="edu-card" data-aos="fade-up">
                         <h1>2023 - 2027</h1> -Lincoln University College, Malaysia.
                         <p>Bsc. Cyber Security.</p>
                     </div>
@@ -144,6 +145,10 @@
     <script src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
