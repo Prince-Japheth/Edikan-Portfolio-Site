@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
   <!-- PC NAVBAR -->
-  <div class="navbar">
+  <div class="navbar" data-aos="fade-left">
     <a href="#" class="active"><ion-icon name="home"></ion-icon></a>
     <a href="./about.html"><ion-icon name="person"></ion-icon></a>
     <a href="./portfolio.html"><ion-icon name="briefcase"></ion-icon></a>
@@ -31,20 +32,21 @@
   <!-- HERO SECTION -->
   <section class="hero" id="home">
     <div class="hero-div">
-      <img src="./Meeee.jpg" alt="image" class="image">
+      <img src="./Meeee.jpg" alt="image" class="image" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
       <div class="heroTxt">
-        <h1> <span>- I'M EFFIOM EDIKAN EMMANUEL.</span> <br> WEB DESIGNER</h1>
+        <h1 data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"> <span>- I'M EFFIOM EDIKAN EMMANUEL.</span> <br> WEB DESIGNER</h1>
         <br>
-        <p>I am a web designer and front-end developer based in Nigeria, dedicated to creating clean, user-friendly experiences. I am passionate about building excellent software that enhances the lives of those around me.</p>
+        <p data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">I am a web designer and front-end developer based in Nigeria, dedicated to creating clean, user-friendly
+          experiences. I am passionate about building excellent software that enhances the lives of those around me.</p>
         <div style="display: flex; gap: 20px;">
-          <a href=""><ion-icon name="phone-portrait-outline"></ion-icon></a>
-          <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
-          <a href=""><ion-icon name="logo-github"></ion-icon></a>
-          <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-          <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+          <a href="" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000"><ion-icon name="phone-portrait-outline"></ion-icon></a>
+          <a href="" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          <a href="" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="" data-aos="fade-up" data-aos-delay="2100" data-aos-duration="1000"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="" data-aos="fade-up" data-aos-delay="2400" data-aos-duration="1000"><ion-icon name="mail-outline"></ion-icon></a>
         </div>
         <br>
-        <button onclick="location.href='./resume.html'">
+        <button onclick="location.href='./resume.html'"  data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
           <span>MORE ABOUT ME</span>
           <ion-icon name="arrow-forward-circle"></ion-icon>
         </button>
@@ -55,6 +57,10 @@
   <script src="index.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
