@@ -1,0 +1,172 @@
+
+
+/* Responsive CSS for the portfolio */
+
+/* Responsive CSS for the portfolio */
+
+@media (max-width: 1200px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+    }
+    
+    .social-links {
+      position: static;
+      transform: none;
+      margin: 30px 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      padding: 15px;
+    }
+    
+    .name {
+      font-size: 36px;
+    }
+    
+    .service-icons {
+      padding: 20px;
+    }
+    
+    .service-icon {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .social-links {
+      gap: 15px;
+    }
+    
+    .social-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 15px;
+    }
+    
+    .content-wrapper {
+      gap: 15px;
+    }
+    
+    .profile-header {
+      flex-direction: column;
+    }
+    
+    .avatar-container {
+      width: 150px;
+      height: 150px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    .navigation {
+      width: 95%;
+      padding: 8px 15px;
+    }
+    
+    .nav-links {
+      gap: 10px;
+      font-size: 14px;
+    }
+    
+    .talk-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+    
+    .social-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .social-icon {
+      width: 45px;
+      height: 45px;
+    }
+    
+    .circle-button {
+      width: 35px;
+      height: 35px;
+    }
+    
+    .service-icons {
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .profile-card, .services-card, .resume-card, .works-card {
+      padding: 15px;
+      min-height: 250px;
+    }
+    
+    .navigation {
+      flex-direction: column;
+      gap: 10px;
+      border-radius: 25px;
+      bottom: 10px;
+      padding: 15px;
+    }
+    
+    .nav-links {
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    .contact-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    .talk-btn {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .name {
+      font-size: 32px;
+    }
+    
+    .bio {
+      font-size: 13px;
+    }
+    
+    .service-icon, .social-icon {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .service-icon i, .social-icon i {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .name {
+      font-size: 28px;
+    }
+    
+    .service-icons {
+      padding: 15px;
+    }
+    
+    .navigation {
+      width: 95%;
+      padding: 10px;
+    }
+    
+    .nav-links {
+      gap: 8px;
+      font-size: 12px;
+    }
+  }

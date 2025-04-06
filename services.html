@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services</title>
+    <meta name="description" content="Professional portfolio of a creative designer and developer">
+    <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Navigation Header -->
+      <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./icons8-e-50.png" alt="">
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./index.html" class="nav-link ">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="./services.html" class="nav-link active">Services</a></li>
+                <li class="nav-item"><a href="./portfolio.html" class="nav-link">Works</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+         <!-- Services Section -->
+         <section id="services" class="services" style="margin-top: 20px;">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Services</h2>
+                <p>I provide high-quality solutions for your digital needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Cross-Platform Mobile App Development</h3>
+                    <p>Creating beautiful Mobile Apps with focus on user experience</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and functional web applications</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Optimizing websites for speed and efficiency</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

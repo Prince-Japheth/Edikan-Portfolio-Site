@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact</title>
+    <meta name="description" content="Professional portfolio of a creative designer and developer">
+    <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional contact page styles */
+        .contact-wrapper {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+        
+        .contact-info {
+            flex: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 2rem;
+            min-width: 300px;
+        }
+        
+        .contact-form-container {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .contact-text h3 {
+            margin-bottom: 0.5rem;
+            color: var(--accent-primary);
+        }
+        
+        .contact-text p, .contact-text a {
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+        
+        .contact-text a:hover {
+            color: var(--accent-primary);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+            
+            .contact-info, .contact-form-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+      <!-- Navigation Header -->
+      <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./icons8-e-50.png" alt="">
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./index.html" class="nav-link ">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="./services.html" class="nav-link ">Services</a></li>
+                <li class="nav-item"><a href="./portfolio.html" class="nav-link">Works</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link active">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <!-- Contact Section -->
+       <section id="contact" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <p>Feel free to contact me for any project or collaboration</p>
+        </div>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>FCT Abuja, Nigeria</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <a href="mailto:aeadikanemmanuel@gmail.com">aeadikanemmanuel@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <a href="tel:+2349038585075">+234 903 858 5075</a>
+                    </div>
+                </div>
+                
+                <!-- <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 9am - 5pm</p>
+                        <p>Weekends: By appointment</p>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="contact-form-container" data-aos="fade-left">
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://github.com/Aeadikan2/" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/2349038585075" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://x.com/aeadikan?t=u33H4fHf7blYdP3lw-V24g&s=09" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+    </main>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; <span id="current-year"></span> My Portfolio. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- AOS Animation Script -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="index.js"></script>
+</body>
+</html>

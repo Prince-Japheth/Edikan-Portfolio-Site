@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Professional portfolio of a creative designer and developer">
+    <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./icons8-e-50.png" alt="">
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="./services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="./portfolio.html" class="nav-link">Works</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+ <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-image-container" data-aos="fade-right" data-aos-delay="100">
+            <div class="hero-image-slider">
+                <img src="./edii.jpg" alt="Designer at work" class="hero-image active">
+                <img src="./bitmoji.png" alt="Development work" class="hero-image">
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="welcome-badge" data-aos="fade-up" data-aos-delay="100">
+                <span class="emoji">👋</span> Welcome to my portfolio
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="300">
+                <span class="title-line">Creative Designer</span>
+                <span class="gradient-text">& Developer</span>
+            </h1>
+            
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">
+                Crafting beautiful digital experiences with passion and precision.
+                Bringing ideas to life through clean code and stunning design.
+            </p>
+            
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="700">
+                <a href="./portfolio.html" class="btn primary-btn">
+                    View My Work <i class="fas fa-chevron-right btn-icon"></i>
+                </a>
+                <a href="./about.html" class="btn outline-btn">About Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

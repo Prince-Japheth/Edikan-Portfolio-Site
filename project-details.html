@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | My Portfolio</title>
+    <link rel="shortcut icon" href="./icons8-e-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for project details page */
+        .project-details {
+            padding: 80px 0;
+        }
+        
+        .project-hero {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .project-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .project-header {
+            margin-bottom: 40px;
+        }
+        
+        .project-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .project-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .project-meta-item i {
+            color: var(--accent-primary);
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .project-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-image:hover img {
+            transform: scale(1.03);
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+        }
+        
+        .project-description {
+            margin-bottom: 30px;
+        }
+        
+        .project-details-list {
+            margin-bottom: 30px;
+        }
+        
+        .project-details-list h3 {
+            margin-bottom: 15px;
+        }
+        
+        .project-details-list ul {
+            list-style-type: none;
+        }
+        
+        .project-details-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .project-details-list li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+        
+        .project-sidebar {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 25px;
+            height: fit-content;
+        }
+        
+        .project-info-box {
+            margin-bottom: 25px;
+        }
+        
+        .project-info-box h3 {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--card-border);
+        }
+        
+        .project-info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .project-info-item span:first-child {
+            color: var(--text-secondary);
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .project-tag {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--accent-primary);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+        }
+        
+        .project-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--card-border);
+        }
+        
+        .project-nav a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .project-nav a:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-meta {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./icons8-e-50.png" alt="">
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="./services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="./portfolio.html" class="nav-link active">Works</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero Section -->
+        <section class="project-hero">
+            <div class="project-container">
+                <h1 class="project-title" id="project-title" data-aos="fade-up">Project Title</h1>
+                <p id="project-subtitle" data-aos="fade-up" data-aos-delay="100">Project description</p>
+            </div>
+        </section>
+
+        <!-- Project Details Section -->
+        <section class="project-details">
+            <div class="project-container">
+                <div class="project-header" data-aos="fade-up">
+                    <div class="project-meta" id="project-meta">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="project-gallery" id="project-gallery">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+
+                <div class="project-content">
+                    <div class="project-main">
+                        <div class="project-description" data-aos="fade-up" id="project-overview">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+
+                        <div class="project-details-list" data-aos="fade-up" data-aos-delay="100" id="project-features">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+
+                        <div class="project-details-list" data-aos="fade-up" data-aos-delay="200" id="project-technical">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="project-sidebar" data-aos="fade-left">
+                        <div class="project-info-box" id="project-info">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+
+                        <div class="project-info-box" id="project-technologies">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+
+                        <div class="project-info-box" id="project-link">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-nav" data-aos="fade-up">
+                    <a href="#" id="prev-project">
+                        <i class="fas fa-arrow-left"></i> Previous Project
+                    </a>
+                    <a href="./portfolio.html">
+                        <i class="fas fa-th"></i> Back to Projects
+                    </a>
+                    <a href="#" id="next-project">
+                        Next Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+<script>
+    // Project data - this would typically come from a database in a real application
+    const projects = {
+        topix: {
+            title: "Topix",
+            subtitle: "A community communication platform",
+            date: "March 2023",
+            category: "Web Application",
+            client: "Topix Media",
+            website: "https://topix.great-site.net/about/?i=1",
+            images: [
+                "./image copy 2.png",
+                "./image copy.png",
+                "./Screenshot 2025-04-05 233844.png",
+            ],
+            overview: `
+                <h2>Project Overview</h2>
+                <p>Topix is a platform that brings together individuals from diverse backgrounds, united by common interests and passions.</p>
+                <p>As one of the developers, I was responsible for the frontend architecture and integration with the recommendation API. The project was built with a mobile-first approach to ensure optimal performance across all devices.</p>
+            `,
+            features: [
+                "Create Posts, reels, and pictures, build Communities, and post ads on Topix targeted to audiences based on their topic of Interests.",
+                "Engage in discussions by commenting on Posts and sharing your perspectives.",
+                "Show your appreciation for Posts and Comments by liking them.",
+                "Dark/light mode toggle",
+                "Cross-platform synchronization",
+                "Connect with members directly through our real-time chat feature."
+            ],
+            technical: [
+                "React.js with Redux for state management",
+                "PHP backend with Express",
+                "MySQL for user data and preferences",
+            ],
+            technologies: ["React", "PHP", "MySQL"],
+            nextProject: "sms",
+            prevProject: "portfolio"
+        },
+        portfolio: {
+            title: "Portfolio Design",
+            subtitle: "Custom portfolio website with interactive elements",
+            date: "November 2022",
+            category: "Website",
+            client: "Personal Project",
+            website: "https://aeady.netlify.app/",
+            images: [
+                "./image copy.png",
+                "./image copy 2.png",
+                "./Screenshot 2025-04-05 233844.png",
+
+            ],
+            overview: `
+                <h2>Project Overview</h2>
+                <p>This custom portfolio design showcases my skills and projects in an interactive, visually appealing format. The design focuses on clean aesthetics while maintaining excellent performance metrics.</p>
+                <p>The portfolio features smooth animations, dark/light mode support, and a contact form with validation. It was built without any frameworks to demonstrate core web development skills.</p>
+            `,
+            features: [
+                "Responsive design with mobile-first approach",
+                "Interactive project gallery",
+                "Contact form with validation",
+                "Performance optimized (95+ Lighthouse score)",
+                "SEO optimized structure"
+            ],
+            technical: [
+                "Pure HTML5, CSS3, and JavaScript",
+                "CSS Grid and Flexbox layout",
+                "Form validation with JavaScript",
+                "Animation with CSS and GSAP",
+                "Accessibility best practices",
+                "Progressive enhancement approach"
+            ],
+            technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"],
+            nextProject: "topix",
+            prevProject: "sms"
+        },
+        sms: {
+        title: "GlamourGrid",
+        subtitle: "Comprehensive solution to streamline salon operations and enhance customer experience",
+        date: "April 2024",
+        category: "Salon Management System",
+        client: "Local Beauty Salons",
+        website: "https://psa.lincoln.edu.ng/glamour/sms/index.php",
+        images: [
+            "./Screenshot 2025-04-05 233844.png",
+            "./image copy.png",
+            "./image copy 2.png",
+        ],
+        overview: `
+            <h2>Project Overview</h2>
+            <p>The Salon Management System is a complete solution designed to automate and optimize daily salon operations. This web-based application helps salon owners manage appointments, staff, inventory, and customer relationships efficiently.</p>
+            <p>The system was developed to address common challenges in salon management including appointment scheduling conflicts, inventory tracking, and customer retention. It provides real-time insights into business performance and simplifies administrative tasks.</p>
+        `,
+        features: [
+            "Online appointment booking system",
+            "Staff management and scheduling",
+            "Customer database with history tracking",
+            "Inventory management for salon products",
+            "Billing and payment processing",
+            "Reporting and analytics dashboard",
+            "Customer feedback and review system",
+            "Mobile-responsive interface"
+        ],
+        technical: [
+            "Frontend built with Bootstrap 5 for responsive design",
+            "PHP backend with MVC architecture",
+            "MySQL relational database",
+            "User authentication with role-based access",
+            "RESTful API for future mobile app integration",
+            "Data encryption for sensitive information",
+            "CSRF protection and input validation",
+            "PDF report generation"
+        ],
+        technologies: ["Bootstrap", "PHP", "MySQL", "JavaScript", "jQuery", "Chart.js"],
+        nextProject: "topix", 
+        prevProject: "portfolio" 
+    }
+};
+ 
+
+    // Get project ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectId = urlParams.get('project') || 'topix';
+    const project = projects[projectId];
+
+    // Set document title
+    document.title = `${project.title} | Project Details`;
+
+    // Populate project data
+    document.getElementById('project-title').textContent = project.title;
+    document.getElementById('project-subtitle').textContent = project.subtitle;
+
+    // Populate meta info
+    const metaHTML = `
+        <div class="project-meta-item">
+            <i class="fas fa-calendar"></i>
+            <span>${project.date}</span>
+        </div>
+        <div class="project-meta-item">
+            <i class="fas fa-tag"></i>
+            <span>${project.category}</span>
+        </div>
+        <div class="project-meta-item">
+            <i class="fas fa-user"></i>
+            <span>${project.client}</span>
+        </div>
+    `;
+    document.getElementById('project-meta').innerHTML = metaHTML;
+
+    // Populate gallery
+    let galleryHTML = '';
+    project.images.forEach((img, index) => {
+        galleryHTML += `
+            <div class="project-image" data-aos="fade-up" data-aos-delay="${index * 100}">
+                <img src="${img}" alt="${project.title} Screenshot ${index + 1}">
+            </div>
+        `;
+    });
+    document.getElementById('project-gallery').innerHTML = galleryHTML;
+
+    // Populate content sections
+    document.getElementById('project-overview').innerHTML = project.overview;
+    
+    let featuresHTML = '<h2>Key Features</h2><ul>';
+    project.features.forEach(feature => {
+        featuresHTML += `<li>${feature}</li>`;
+    });
+    featuresHTML += '</ul>';
+    document.getElementById('project-features').innerHTML = featuresHTML;
+    
+    let technicalHTML = '<h2>Technical Details</h2><ul>';
+    project.technical.forEach(detail => {
+        technicalHTML += `<li>${detail}</li>`;
+    });
+    technicalHTML += '</ul>';
+    document.getElementById('project-technical').innerHTML = technicalHTML;
+
+    // Populate sidebar
+    document.getElementById('project-info').innerHTML = `
+        <h3>Project Information</h3>
+        <div class="project-info-item">
+            <span>Category:</span>
+            <span>${project.category}</span>
+        </div>
+        <div class="project-info-item">
+            <span>Client:</span>
+            <span>${project.client}</span>
+        </div>
+        <div class="project-info-item">
+            <span>Date:</span>
+            <span>${project.date}</span>
+        </div>
+        <div class="project-info-item">
+            <span>Website:</span>
+            <span><a href="${project.website}" target="_blank">${project.website === '#' ? 'Not Live' : project.website}</a></span>
+        </div>
+    `;
+
+    let technologiesHTML = '<h3>Technologies Used</h3><div class="project-tags">';
+    project.technologies.forEach(tech => {
+        technologiesHTML += `<span class="project-tag">${tech}</span>`;
+    });
+    technologiesHTML += '</div>';
+    document.getElementById('project-technologies').innerHTML = technologiesHTML;
+
+    document.getElementById('project-link').innerHTML = `
+        <a href="${project.website}" class="btn primary-btn" style="width: 100%; text-align: center;" ${project.website === '#' ? 'disabled' : ''}>
+            <i class="fas fa-external-link-alt"></i> ${project.website === '#' ? 'Project Not Live' : 'Visit Website'}
+        </a>
+    `;
+
+    // Set up navigation
+    document.getElementById('next-project').href = `project-details.html?project=${project.nextProject}`;
+    document.getElementById('prev-project').href = `project-details.html?project=${project.prevProject}`;
+
+    // Initialize animations
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+    
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+    
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
